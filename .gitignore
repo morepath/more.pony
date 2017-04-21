@@ -1,0 +1,17 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[co]
+
+# Distribution / packaging
+*.egg-info/
+/build/
+/dist/
+
+# Virtualenv
+/env/
+
+# Unit test / coverage reports
+.cache/
+/.coverage
+/htmlcov
+/.tox

@@ -4,9 +4,9 @@ more.pony: Pony ORM integration in Morepath
 This package provides Morepath integration for the Pony_
 Object-Relational Mapper library.
 
-This package binds the database session to the request so you can use
-so you can interact with the database in your App directly without
-using ``db_session``.
+This package binds the database session to the request so
+you can interact with the database in your App directly
+without using ``db_session``.
 
 
 Quick start
@@ -178,7 +178,7 @@ look something like:
   database:
     provider: sqlite
     args:
-    - app.db
+      - app.db
     kwargs:
       create_db: true
 

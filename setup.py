@@ -8,7 +8,7 @@ long_description = (
     io.open('CHANGES.rst', encoding='utf-8').read())
 
 setup(name='more.pony',
-      version='0.1',
+      version='0.2.dev0',
       description="Pony ORM integration in Morepath",
       long_description=long_description,
       author="Henri Hulski",

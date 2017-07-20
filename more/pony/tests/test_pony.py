@@ -18,7 +18,7 @@ def test_query_document():
         title = Optional(str)
         content = Optional(str)
 
-    db.bind('sqlite', ':memory:')
+    db.bind(provider='sqlite', filename=':memory:')
     db.generate_mapping(create_tables=True)
     sql_debug(True)
 
@@ -66,7 +66,7 @@ def test_update_document():
         def update(self, payload={}):
             self.set(**payload)
 
-    db.bind('sqlite', ':memory:')
+    db.bind(provider='sqlite', filename=':memory:')
     db.generate_mapping(create_tables=True)
     sql_debug(True)
 
@@ -120,7 +120,7 @@ def test_delete_document():
         def remove(self):
             self.delete()
 
-    db.bind('sqlite', ':memory:')
+    db.bind(provider='sqlite', filename=':memory:')
     db.generate_mapping(create_tables=True)
     sql_debug(True)
 

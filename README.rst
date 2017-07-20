@@ -62,7 +62,7 @@ Setup the database in your start script:
 
 
   def run():
-      db.bind('sqlite', 'app.db', create_db=True)
+      db.bind(provider='sqlite', filename='app.db', create_db=True)
       db.generate_mapping(create_tables=True)
 
       morepath.autoscan()
@@ -177,10 +177,8 @@ look something like:
 
   database:
     provider: sqlite
-    args:
-      - app.db
-    kwargs:
-      create_db: true
+    filename: app.db
+    create_db: true
 
 In your start script you setup the database and load
 the App according to the ``RUN_ENV`` environment variable:
@@ -195,10 +193,8 @@ the App according to the ``RUN_ENV`` environment variable:
 
 
   def setup_db(app):
-      provider = app.settings.database.provider
-      args = app.settings.database.args
-      kwargs = app.settings.database.kwargs
-      db.bind(provider, *args, **kwargs)
+      db_params = app.settings.database.__dict__.copy()
+      db.bind(**db_params)
       db.generate_mapping(create_tables=True)
 
   def run():

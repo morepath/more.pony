@@ -1,7 +1,7 @@
 CHANGES
 =======
 
-0.2 (unreleased)
+0.2 (2017-07-20)
 ----------------
 
 - Upgrade PonyORM to 0.7.2.

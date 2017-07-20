@@ -29,7 +29,7 @@ setup(name='more.pony',
       ],
       install_requires=[
           'morepath >= 0.18',
-          'pony'
+          'pony >= 0.7.2'
       ],
       extras_require=dict(
           test=[

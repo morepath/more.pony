@@ -33,7 +33,7 @@ setup(
     install_requires=["morepath >= 0.19", "pony >= 0.7.13"],
     extras_require=dict(
         test=["pytest >= 2.9.1", "pytest-remove-stale-bytecode", "webtest"],
-        coverage=["pytest-cov",],
-        pep8=["flake8", "black",],
+        coverage=["pytest-cov"],
+        pep8=["flake8", "black"],
     ),
 )

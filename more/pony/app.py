@@ -29,6 +29,6 @@ def pony_tween_factory(app, handler):
         strict=app.settings.pony.strict
     )
     def pony_tween(request):
-            return handler(request)
+        return handler(request)
 
     return pony_tween

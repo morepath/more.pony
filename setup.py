@@ -42,6 +42,6 @@ setup(name='more.pony',
           ],
           pep8=[
               'flake8',
-              'pep8-naming',
+              'black',
           ],
       ))

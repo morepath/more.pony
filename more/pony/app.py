@@ -6,15 +6,15 @@ class App(morepath.App):
     pass
 
 
-@App.setting_section(section='pony')
+@App.setting_section(section="pony")
 def get_pony_settings():
     return {
-        'allowed_exceptions': [],
-        'immediate': False,
-        'retry': 0,
-        'retry_exceptions': [TransactionError],
-        'serializable': False,
-        'strict': False
+        "allowed_exceptions": [],
+        "immediate": False,
+        "retry": 0,
+        "retry_exceptions": [TransactionError],
+        "serializable": False,
+        "strict": False,
     }
 
 
@@ -26,7 +26,7 @@ def pony_tween_factory(app, handler):
         retry=app.settings.pony.retry,
         retry_exceptions=app.settings.pony.retry_exceptions,
         serializable=app.settings.pony.serializable,
-        strict=app.settings.pony.strict
+        strict=app.settings.pony.strict,
     )
     def pony_tween(request):
         return handler(request)

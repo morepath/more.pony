@@ -14,6 +14,8 @@ CHANGES
 
 - Upgrade PonyORM to 0.7.13.
 
+- Add integration for the Black code formatter.
+
 
 0.2 (2017-07-20)
 ----------------

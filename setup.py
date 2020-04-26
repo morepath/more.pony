@@ -8,7 +8,7 @@ long_description = (
 
 setup(
     name="more.pony",
-    version="0.3.dev0",
+    version="0.3",
     description="Pony ORM integration in Morepath",
     long_description=long_description,
     author="Henri Hulski",

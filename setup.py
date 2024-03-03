@@ -29,9 +29,14 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
-    install_requires=["morepath >= 0.19", "pony >= 0.7.13"],
+    install_requires=["morepath >= 0.19", "pony >= 0.7.17"],
     extras_require=dict(
-        test=["pytest >= 2.9.1", "pytest-remove-stale-bytecode", "webtest"],
+        test=[
+            "pytest >= 2.9.1",
+            "pytest-remove-stale-bytecode",
+            "webtest",
+            "pygments",
+        ],
         coverage=["pytest-cov"],
         lint=["flake8", "black"],
     ),

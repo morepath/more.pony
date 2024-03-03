@@ -1,5 +1,5 @@
 # development
--e '.[test,coverage,pep8]'
+-e '.[test,coverage,lint]'
 pre-commit
 tox >= 2.4.1
 

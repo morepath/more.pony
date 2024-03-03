@@ -33,6 +33,6 @@ setup(
     extras_require=dict(
         test=["pytest >= 2.9.1", "pytest-remove-stale-bytecode", "webtest"],
         coverage=["pytest-cov"],
-        pep8=["flake8", "black"],
+        lint=["flake8", "black"],
     ),
 )

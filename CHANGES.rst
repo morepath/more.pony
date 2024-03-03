@@ -4,13 +4,25 @@ CHANGES
 0.4 (unreleased)
 ----------------
 
+- **Removed**: Drop support for Python 3.4, 3.5, 3.6 and 3.7.
+
+- Add support for Python 3.9, 3.10 and 3.11.
+
 - Fix Flake8.
 
-- Drop support for Python 3.4 and 3.5.
-
-- Add support for Python 3.9.
-
 - Use GitHub Actions for CI.
+
+- Make Python 3.11 the default testing environment.
+
+- Upgrade PonyORM to 0.7.17.
+
+- Show full diffs in the test output.
+
+- Add Editors config and venv to .gitignore.
+
+- Remove report to coveralls.
+
+- Update pre-commit revs.
 
 
 0.3 (2020-04-26)
@@ -27,6 +39,8 @@ CHANGES
 - Upgrade PonyORM to 0.7.13.
 
 - Add integration for the Black code formatter.
+
+
 
 
 0.2 (2017-07-20)

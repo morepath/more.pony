@@ -2,9 +2,6 @@
    :target: https://github.com/morepath/more.pony/actions?workflow=CI
    :alt: CI Status
 
-.. image:: https://coveralls.io/repos/github/morepath/more.pony/badge.svg?branch=master
-    :target: https://coveralls.io/github/morepath/more.pony?branch=master
-
 .. image:: https://img.shields.io/pypi/v/more.pony.svg
   :target: https://pypi.org/project/more.pony/
 

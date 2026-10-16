@@ -1,3 +1,2 @@
-include *.txt *.rst *.cfg *.py *.ini *.yaml
-exclude .installed.cfg .mr.developer.cfg
-recursive-include more *.py
+include *.rst *.txt
+exclude .githooks/pre-commit

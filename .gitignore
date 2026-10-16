@@ -1,26 +1,29 @@
 # Byte-compiled / optimized
-__pycache__/
+__pycache__
 *.py[co]
 
 # Distribution / packaging
-*.egg-info/
-/build/
-/dist/
+*.egg-info
+/build
+/dist
 
 # Virtualenv
-/env/
-/venv/
-/.venv/
+.venv
+/env
+/venv
 
 # Unit test / coverage reports
-.cache
-.pytest_cache
 .coverage
 htmlcov
 .tox
 
-# Sphinx documentation
-/doc/build/
+# Caches
+.cache
+.*_cache
 
-# Editors
-.vscode
+# Sphinx documentation
+/doc/_build
+
+# Editor
+/.vscode
+/.idea

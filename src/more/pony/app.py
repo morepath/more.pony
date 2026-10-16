@@ -1,5 +1,5 @@
 import morepath
-from pony.orm import db_session, TransactionError
+from pony.orm import TransactionError, db_session
 
 
 class App(morepath.App):

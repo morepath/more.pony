@@ -1,16 +1,17 @@
 import json
-from webtest import TestApp as Client
-import pytest
 
-from more.pony import PonyApp
+import pytest
 from pony.orm import (
     Database,
-    PrimaryKey,
-    Optional,
-    sql_debug,
-    db_session,
     ObjectNotFound,
+    Optional,
+    PrimaryKey,
+    db_session,
+    sql_debug,
 )
+from webtest import TestApp as Client
+
+from more.pony import PonyApp
 
 
 def test_query_document():
